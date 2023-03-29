@@ -1,0 +1,14 @@
+#pokedex {
+    min-height: 50vh;
+    background-color: #fd7065;
+    color: white;
+    padding: 24px;
+}
+
+.infoContainer {
+    background-color: White;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 100px;
+    margin-top: -40px;
+}
