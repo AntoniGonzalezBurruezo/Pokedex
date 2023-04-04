@@ -1,4 +1,4 @@
-#pokedex {
+/* .pokemonName {
     min-height: 50vh;
     background-color: #fd7065;
     color: white;
@@ -11,4 +11,29 @@
     border-top-right-radius: 40px;
     height: 100px;
     margin-top: -40px;
+} */
+
+.pokemon {
+    height: 150px;
+    max-width: 300px;
+    background-color: #fd7065;
+    border-radius: 10px;
+    margin: 16px;
+}
+
+.btn {
+    color: #fd7065!important;
+    border-color: #fd7065!important;
+}
+
+.btn:hover {
+    background-color: #fd7065!important;
+    color: white!important;
+}
+
+.pokeimg {
+    background-color: #fd7065;
+    opacity: 0.5;
+    width: 20%;
+    height: 100%;
 }

@@ -1,7 +1,7 @@
 let currentPokemon;
 
 async function loadPokemon() {
-    let url = 'https://pokeapi.co/api/v2/pokemon/ditto';
+    let url = 'https://pokeapi.co/api/v2/pokemon';
     let response = await fetch(url);
     let currentPokemon = await response.json();
 
@@ -11,7 +11,6 @@ async function loadPokemon() {
 }
 
 function renderPokemonInfo(currentPokemon) {
-    document.getElementById('pokemonName').innerHTML = currentPokemon['name'];
+    document.getElementById('pokemonName').innerHTML = currentPokemon['results'][0]['name'];
     document.getElementById('pokemonImg').src = currentPokemon['sprites']['front_default'];
-
 }
