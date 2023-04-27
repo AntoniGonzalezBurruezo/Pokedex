@@ -1,7 +1,7 @@
 let currentPokemon;
 
 async function loadPokemon() {
-    let url = 'https://pokeapi.co/api/v2/pokemon';
+    let url = 'https://pokeapi.co/api/v2/pokemon/bulbasaur';
     let response = await fetch(url);
     let currentPokemon = await response.json();
 
@@ -11,6 +11,6 @@ async function loadPokemon() {
 }
 
 function renderPokemonInfo(currentPokemon) {
-    document.getElementById('pokemonName').innerHTML = currentPokemon['results'][0]['name'];
+    document.getElementById('pokemonName').innerHTML = currentPokemon['name'].charAt(0).toUpperCase() + currentPokemon['name'].slice(1);
     document.getElementById('pokemonImg').src = currentPokemon['sprites']['front_default'];
 }

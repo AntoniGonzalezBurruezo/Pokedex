@@ -16,9 +16,18 @@
 .pokemon {
     height: 150px;
     max-width: 300px;
-    background-color: #fd7065;
+    background-color: #65fdc3;
     border-radius: 10px;
     margin: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8px;
+}
+
+.pokemonBaby {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .btn {
@@ -32,8 +41,20 @@
 }
 
 .pokeimg {
-    background-color: #fd7065;
-    opacity: 0.5;
-    width: 20%;
-    height: 100%;
+    background-color: rgb(157, 253, 221);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.pokeimg img {
+    width: 150px;
+}
+
+.borderBlack {
+    border: solid 1px black!important;
+    border-radius: 8px;
+    margin: 3px;
+    padding: 3px;
 }
